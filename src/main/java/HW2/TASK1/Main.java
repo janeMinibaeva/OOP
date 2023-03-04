@@ -1,7 +1,4 @@
-package OOP_HW;
-
-import OOP_HW.Car;
-import OOP_HW.Owner;
+package HW2.TASK1;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +6,8 @@ public class Main {
         Car car2 = new Car("mazda",2015,2000d,"red",1.8,new Owner("Pit",30));
         Car car3 = new Car("ford",2016,2000d,"black",1.8,new Owner("Pol",25));
         Car car4 = new Car("bmw",2010,1500d,"orange",1.8,new Owner("Tim",30));
+        car1.setColor("pink");
+        System.out.println(car1.toString());
         car1.getInfo();
         car1.toStart();
         car1.toRoad(" Moscow");
@@ -17,9 +16,9 @@ public class Main {
         car2.toRoad(" Bryansk");
         car3.toRoadFruit(" mango");
 
-        System.out.println("Speed " + car1.model + " - " + car1.getTime());
-        System.out.println("Speed " + car2.model + " - " + car2.getTime());
-        System.out.println("Speed " + car4.model + " - " + car4.getTime());
+        System.out.println("Speed " + car1.getModel() + " - " + car1.getTime());
+        System.out.println("Speed " + car2.getModel() + " - " + car2.getTime());
+        System.out.println("Speed " + car4.getModel() + " - " + car4.getTime());
 
         Car.Finish(car1,car2,car4);
 
